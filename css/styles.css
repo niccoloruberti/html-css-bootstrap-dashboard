@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+/* utilities */
+
+.h_200 {
+    height: 200px;
+}
+
+.h_300 {
+    height: 300px;
+}
+
+.h_400 {
+    height: 400px;
+}
+
+.h_500 {
+    height: 500px;
+}
+
+.h_600 {
+    height: 600px;
+}
+
 /* header */
 
 header {
@@ -19,7 +41,6 @@ nav img {
 .sidebar {
     width: 100px;
     background-color: rgb(5, 30, 52);
-    z-index: 1000;
     padding: 0;
     margin-top: 100px;
     height: calc(100vh - 100px);
@@ -36,6 +57,17 @@ nav img {
     margin-left: 10px;
 }
 
+/* main */
+
+main {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+main .main_top {
+    background-color: rgb(27, 114, 232);
+}
+
 /* media queary - desktop */
 
 @media screen and (min-width: 992px) {
@@ -44,5 +76,8 @@ nav img {
     }
     nav img {
         width: 130px;
+    }
+    main {
+        margin-left: 150px;
     }
 }

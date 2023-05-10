@@ -12,7 +12,7 @@
     </head>
     <body>
         <!-- header -->
-        <header class="d-flex justify-content-between align-items-center fixed-top bg-white">
+        <header class="vw-100 d-flex justify-content-between align-items-center fixed-top bg-white">
             <nav class="navbar navbar-expand h-100 w-100">
                 <div class="container-fluid h-100">
                     <!-- logo mobile -->
@@ -45,17 +45,57 @@
             <div class="content h-100 w-100 d-flex flex-column align-items-center py-3">
                 <ul class="navbar-nav h-100 d-flex flex-column align-items-center">
                     <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-house"></i><span class="d-none d-lg-inline">Home</span></a>
+                        <a class="nav-link" href="#"><i class="fas fa-house"></i><span class="d-none d-lg-inline">Home</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline">Stats</span></a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline">Stats</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span></a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span></a>
                     </li>
                 </ul>
                 <a  class="nav-link" href="#"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline">Admin</span></a>
             </div>
-        </nav>    
+        </nav>
+        <!-- main -->
+        <main>
+            <!-- barra superiore del main -->
+            <div class="container-fluid main_top">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content h_200"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- parte inferiore del main con i contenuti -->
+            <div class="container main_bottom">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- contenitore sezione prossime classi -->
+                                <div class="content h_300 bg-success"></div>
+                            </div>
+                            <div class="col-12">
+                                <!-- contenitore sezione FAQ -->
+                                <div class="content h_200 bg-danger"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- contenitore sezione Todo -->
+                                <div class="content h_200 bg-warning"></div>
+                            </div>
+                            <div class="col-12">
+                                <!-- contenitore sezione utenti attivi -->
+                                <div class="content h_400 bg-danger-subtle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
