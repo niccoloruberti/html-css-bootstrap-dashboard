@@ -12,13 +12,13 @@
     </head>
     <body>
         <!-- header -->
-        <header class="d-flex justify-content-between align-items-center">
+        <header class="d-flex justify-content-between align-items-center fixed-top bg-white">
             <nav class="navbar navbar-expand h-100 w-100">
                 <div class="container-fluid h-100">
                     <!-- logo mobile -->
                     <a class="d-lg-none me-2" href="#"><img src="./img/mobile-logo.png" alt="logo"></a>
                     <!-- logo desktop -->
-                    <a class="d-none d-lg-block me-2" href="#"><img src="./img/logo.svg" alt="logo"></a>
+                    <a class="d-none d-lg-block me-3" href="#"><img src="./img/logo.svg" alt="logo"></a>
                     <!-- barra di ricerca -->
                     <form class="w-100" role="search">
                         <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
@@ -40,5 +40,22 @@
             </div>
             </div>
         </header>
+        <!-- sidebar -->
+        <nav class="navbar navbar-expand fixed-top left-0 sidebar">
+            <div class="content h-100 w-100 d-flex flex-column align-items-center py-3">
+                <ul class="navbar-nav h-100 d-flex flex-column align-items-center">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-house"></i><span class="d-none d-lg-inline">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline">Stats</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span></a>
+                    </li>
+                </ul>
+                <a  class="nav-link" href="#"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline">Admin</span></a>
+            </div>
+        </nav>    
     </body>
 </html>
