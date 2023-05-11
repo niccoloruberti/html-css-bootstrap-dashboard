@@ -26,6 +26,10 @@
     height: 600px;
 }
 
+.bg_badge {
+    background-color: rgb(22, 91, 186);
+}
+
 /* header */
 
 header {
@@ -65,7 +69,7 @@ main {
 }
 
 main .main_top {
-    background-color: rgb(27, 114, 232);
+    background-color: rgb(58, 131, 232);
 }
 
 /* media queary - desktop */

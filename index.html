@@ -28,17 +28,7 @@
             <i class="fa-solid fa-list align-bottom d-none d-lg-block"></i>
             <i class="fa-solid fa-circle-question mx-2 d-none d-lg-block"></i>
             <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
-            <!-- offcanvas -->
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bell text-warning"></i></button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                ...
-            </div>
-            </div>
+            <i class="fas fa-bell text-warning mx-3"></i>
         </header>
         <!-- sidebar -->
         <nav class="navbar navbar-expand fixed-top left-0 sidebar">
@@ -62,17 +52,31 @@
             <!-- barra superiore del main -->
             <div class="container-fluid main_top">
                 <div class="row">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 order-md-1">
                         <!-- nuovo studente -->
-                        <div class="content h_200 bg-danger"></div>
+                        <div class="content mt-4 d-flex align-items-center justify-content-md-end">
+                            <span class="text-white fs-5 mx-2">Nuovo Studente</span>
+                            <button class="btn btn-primary border border-white py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="fs-2">+</span></button>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <!-- Boolean app -->
-                        <div class="content h_200 bg-danger"></div>
+                        <div class="content my-4 d-flex align-items-center flex-wrap">
+                            <span class="fs-2 text-white">Boolean</span>
+                            <span class="fs-6 badge bg_badge m-1 rounded-pill text-bg-primary">Piano blaze</span>
+                            <span class="fs-6 badge bg_badge m-1 rounded-pill text-bg-primary">3 app</span>
+                            <i class="text-white fs-8 fa-solid fa-angles-right"></i>
+                            <span class="fs-6 badge bg_badge m-1 rounded-pill text-bg-primary d-lg-none">+</span>
+                            <span class="fs-6 badge bg_badge m-1 rounded-pill text-bg-primary d-none d-lg-inline">Boolean mobile app</span>
+                            <span class="fs-6 badge bg_badge m-1 rounded-pill text-bg-primary d-none d-lg-inline">Boolean web app</span>
+                            <span class="fs-6 badge bg_badge m-1 rounded-pill text-bg-primary d-none d-lg-inline">Boolean blog app</span>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <!-- studenti online -->
-                        <div class="content h_200 bg-danger"></div>
+                        <div class="content mb-4 mt-md-4 pt-lg-3 d-flex align-items-center justify-content-start justify-content-md-end">
+                            <h6 class="text-white fs-6">Studenti online negli ultimi 30 minuti<br><span class="fs-5 pt-2">125</span></h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,7 +87,46 @@
                         <div class="row">
                             <div class="col-12">
                                 <!-- contenitore sezione prossime classi -->
-                                <div class="content h_300 bg-success"></div>
+                                <div class="content bg-success">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          Featured
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">
+                                            <table class="table">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">First</th>
+                                                    <th scope="col">Last</th>
+                                                    <th scope="col">Handle</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">3</th>
+                                                    <td colspan="2">Larry the Bird</td>
+                                                    <td>@twitter</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                </div>
                             </div>
                             <div class="col-12">
                                 <!-- contenitore sezione FAQ -->
@@ -106,5 +149,15 @@
                 </div>
             </div>
         </main>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
     </body>
 </html>
