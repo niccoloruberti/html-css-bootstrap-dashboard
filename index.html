@@ -56,7 +56,7 @@
                         <!-- nuovo studente -->
                         <div class="content mt-4 d-flex align-items-center justify-content-md-end">
                             <span class="text-white fs-5 mx-2">Nuovo Studente</span>
-                            <button class="btn btn-primary border border-white py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="fs-2">+</span></button>
+                            <button class="btn btn-primary py-1 border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="fs-2 px-2">+</span></button>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
@@ -75,7 +75,7 @@
                     <div class="col-12 col-md-4">
                         <!-- studenti online -->
                         <div class="content mb-4 mt-md-4 pt-lg-3 d-flex align-items-center justify-content-start justify-content-md-end">
-                            <h6 class="text-white fs-6">Studenti online negli ultimi 30 minuti<br><span class="fs-5 pt-2">125</span></h6>
+                            <h6 class="text-white fs-6">Studenti online negli ultimi 30 minuti<br><span class="fs-3 pt-2">125</span></h6>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,24 @@
                             </div>
                             <div class="col-12">
                                 <!-- contenitore sezione utenti attivi -->
-                                <div class="content h_400 bg-danger-subtle"></div>
+                                <div class="content">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card">
+                                                <ul class="list-group list-group-flush">
+                                                  <li class="list-group-item">
+                                                    <img class="img-fluid" src="./img/stats.jpeg" alt="stats">
+                                                    <h3>Utenti attivi</h3>
+                                                    <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                                  </li>
+                                                  <li class="list-group-item">Gennaio: 1200</li>
+                                                  <li class="list-group-item">Febbrario: 800</li>
+                                                  <li class="list-group-item">Marzo: 1500</li>
+                                                </ul>
+                                              </div>
+                                        </div>
+                                      </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,13 +289,79 @@
             </div>
         </main>
         <!-- offcanvas -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                ...
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="Firstname" class="form-label">Nome</label>
+                        <input type="text" class="form-control" aria-label="First name">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="Lastname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" aria-label="Last name">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                        <div class="input-group">
+                          <div class="input-group-text">@</div>
+                          <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Stato</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Scegli...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Seleziona per proseguire
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Salva</button>
+                      <button type="button" class="btn btn-warning">Svuota</button>
+                    </div>
+                  </form>
             </div>
         </div>
     </body>
