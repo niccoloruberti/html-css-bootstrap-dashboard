@@ -6,26 +6,6 @@
 
 /* utilities */
 
-.h_200 {
-    height: 200px;
-}
-
-.h_300 {
-    height: 300px;
-}
-
-.h_400 {
-    height: 400px;
-}
-
-.h_500 {
-    height: 500px;
-}
-
-.h_600 {
-    height: 600px;
-}
-
 .bg_badge {
     background-color: rgb(22, 91, 186);
 }
@@ -60,6 +40,10 @@ nav img {
     color: white;
     font-size: 20px;
     margin-left: 10px;
+}
+
+.navbar .nav-item .nav-link:hover  {
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 /* main */
